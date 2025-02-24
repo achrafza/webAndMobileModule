@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-container">
+            <h1>Pomodoro Timer</h1>
+            
+            <div class="session-type">Work Session</div>
+            
+            <div class="timer">
+                <div class="time-display">25:00</div>
+                <div class="progress-ring">
+                    <svg class="progress" width="250" height="250">
+                        <circle class="progress-ring-circle" cx="125" cy="125" r="115" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start" class="btn primary">Start</button>
+                <button id="reset" class="btn secondary">Reset</button>
+            </div>
+
+            <div class="session-info">
+                <span>Sessions completed: </span>
+                <span id="sessions-count">0</span>
+            </div>
+        </div>
+
+        <div class="tasks-container">
+            <h2>Tasks</h2>
+            <div class="task-input">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <button id="add-task" class="btn primary">Add</button>
+            </div>
+            <ul id="task-list" class="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
