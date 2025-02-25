@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Constants
-    const WORK_TIME = 1 * 60;
+    const WORK_TIME = 25 * 60;
     const SHORT_BREAK = 5 * 60;
     const LONG_BREAK = 15 * 60;
     const POMODOROS_UNTIL_LONG_BREAK = 4;
