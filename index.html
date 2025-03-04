@@ -3,64 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Professional Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">ACHRAF<span>ZAHID</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">🌙</button>
+        </div>
     </header>
 
     <main>
-        <section id="about">
-            <h1>Achraf ZAHID</h1>
-            <h2>Developer, low level enthousiaste</h2>
-            <p>I'm a passionate developer with experience in C(recreating linux shell commands and studying they're behaviour),
-                CPP(for competitive programming), and JAVA(spring for backend applications).
-                I love creating server side websites with java(spring) and some hardcode networking.</p>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>food it up</h3>
-                <p>A responsive website for a delivery system application.</p>
-            </div>
-            <div class="project">
-                <h3>dataverse X opensource website</h3>
-                <p>a simple front website using simple react with tailwind and a reponsive front</p>
-            </div>
-            <div class="project">
-                <h3>personal stuff</h3>
-                <p>for more informations contact us</p>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="profile">
+                    <img src="src/profile.png" alt="Profile Picture" class="profile-img">
+                    <div class="profile-text">
+                        <h1>Hi, I'm <span id="name">Achraf zahid</span></h1>
+                        <h2>Data engineering Student</h2>
+                        <p>I'm a passionate developer with experience in C(recreating linux shell commands and studying they're behaviour), CPP(for competitive programming), and JAVA(spring for backend applications). I love creating server side websites with java(spring) and some hardcode networking.</p>
+                        <div class="cta">
+                            <a href="#projects" class="btn primary-btn">View My Work</a>
+                            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2> 
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%"></div>
+                        </div>
+                        <div class="skill-percent">70%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">web with react</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 60%"></div>
+                        </div>
+                        <div class="skill-percent">60%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">C</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 99%"></div>
+                        </div>
+                        <div class="skill-percent">99%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">CPP</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">JAVA</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 60%"></div>
+                        </div>
+                        <div class="skill-percent">60%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">shell</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%"></div>
+                        </div>
+                        <div class="skill-percent">70%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="src/foodituplogo-01.jpg" alt="Weather App">
+                        </div>
+                        <div class="project-info">
+                            <h3>Food it up</h3>
+                            <p>A responsive pick order delivery system application.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Spring boot</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn">Demo</a>
+                                <a href="#" class="btn small-btn">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="src/dxo.jpg" alt="Task Manager">
+                        </div>
+                        <div class="project-info">
+                            <h3>school's event landing page</h3>
+                            <p>a very simple landing page for our local event dataverse X opensource.</p>
+                            <div class="project-tags">
+                                <span>react</span>
+                                <span>tailwind</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn">Demo</a>
+                                <a href="#" class="btn small-btn">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="src/image.png" alt="Data Visualization">
+                        </div>
+                        <div class="project-info">
+                            <h3>pomodoro</h3>
+                            <p>A simple pomodoro application using vanilla js.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn">Demo</a>
+                                <a href="#" class="btn small-btn">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <p><a href="mailto:alex.johnson@example.edu">achraafzaahid@gmail.com</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Location</h3>
+                            <p>7ad swalem, zemamra</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Social</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link">GitHub</a>
+                                <a href="#" class="social-link">LinkedIn</a>
+                                <a href="#" class="social-link">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 ACHRAF ZAHID LLC. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 achraf zahid. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
