@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+<person>
+    <gender>male</gender>
+    
+    <name>
+    <firstName>mohamed amine</firstName>
+    <lastName>Elarbani</lastName>
+    </name>
+
+    <adress>
+        lmarikan am3alem
+    </adress>
+
+    <phoneNumbers>
+        <number>0607434344</number>
+        <number>0607277392</number>
+        <number>0607277392</number>
+        <number>0607277392</number>
+    </phoneNumbers>
+
+    <emailAddresses>
+        <email>arbani01@gmail.com</email>
+        <email>achraafzaahid@gmail.com</email>
+        <email>achraafzaahid@gmail.com</email>
+        <email>achraafzaahid@gmail.com</email>
+    </emailAddresses>
+
+</person>
+
+<person>
+    <gender>male</gender>
+    
+    <name>
+    <firstName>achraf</firstName>
+    <lastName>zahid</lastName>
+    </name>
+
+    <adress>
+        nahda 7da darna 
+    </adress>
+
+    <phoneNumbers>
+        <number type="main">0607277392</number>
+        <number type="second">0607277392</number>
+        <number>0607277392</number>
+        <number>0607277392</number>
+    </phoneNumbers>
+
+    <emailAddresses>
+        <email type="main">achraafzaahid@gmail.com</email>
+        <email type="second">achraafzaahid@gmail.com</email>
+        <email>achraafzaahid@gmail.com</email>
+        <email>achraafzaahid@gmail.com</email>
+    </emailAddresses>
+
+</person>
+
+<person>
+    <gender>female</gender>
+    
+    <name>
+    <firstName>imane</firstName>
+    <lastName>lhemmaoui</lastName>
+    </name>
+
+    <adress>
+        chiblassa b3iida 
+    </adress>
+
+    <phoneNumbers>
+        <number type="main">0616nmerty makate3tach</number>
+        <number type="second">0607277392</number>
+
+    </phoneNumbers>
+
+    <emailAddresses>
+        <email type="main">imsnddd33@gmail.com</email>
+        <email type="second">achraafzaahid@gmail.com</email>
+        <email type="autres">achraafzaahid@gmail.com</email>
+    </emailAddresses>
+
+</person>
+</people>
